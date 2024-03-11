@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 
 
 const apiKey  = import.meta.env.VITE_API_KEY;
-const openai = new OpenAI({apiKey})
+const openai = new OpenAI({apiKey, dangerouslyAllowBrowser: true })
 
 
 async function ChatComponent({userPrompt}) {
