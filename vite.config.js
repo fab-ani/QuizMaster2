@@ -8,7 +8,7 @@ export default ({ mode }) =>{
  return defineConfig({
   plugins: [react()],
   
-  assetsInclude: ["**/*.js", "**/*.css", "**/*.svg"],
+  assetsInclude: ["**/*.js", "**/*.svg"],
   define: {
     'process.env':process.env,
   },

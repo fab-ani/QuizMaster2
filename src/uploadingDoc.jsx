@@ -42,17 +42,19 @@ const UploadUserDoc = ()=>{
     }
     return (
         <div className='upload-button-container'>
+             <label htmlFor='fileInput' className='upload-button'>
+              PDF
+                </label>
+            
             <input
             type='file'
             id='fileInput'
             style={{display:'none'}}
-            onChange={handleFileChange}/>
-            <label htmlFor='fileInput' className='upload-button'>
-                <FaUpload/> 
-                </label>
+            onChange={handleFileChange}
+            aria-label='File Input'/>
             <button className = 'upload-button' 
             onClick={handleUpload}>
-                Upload
+                  Upload
             </button >
           
         </div>
