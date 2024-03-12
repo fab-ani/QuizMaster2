@@ -7,6 +7,7 @@ export default ({ mode }) =>{
   // https://vitejs.dev/config/
  return defineConfig({
   plugins: [react()],
+  
   assetsInclude: ["**/*.JPG"],
   define: {
     'process.env':process.env,
@@ -18,8 +19,10 @@ export default ({ mode }) =>{
   },
   build: {
     chunkSizeWarningLimit: 1600,
+    
   },
   server:{
-    middleware:[contentTypeOptions],
+    middlewarem:[contentTypeOptions],
+    
   }
 })}
