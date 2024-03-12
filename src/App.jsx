@@ -3,9 +3,8 @@ import Container from "./container";
 import UploadUserDoc from "./uploadingDoc";
 import { TextProvider } from "./TextContext";
 
-function App(){ 
-  
 
+function App(){   
   return(
    
     <TextProvider>
