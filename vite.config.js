@@ -22,7 +22,6 @@ export default ({ mode }) =>{
     
   },
   server:{
-    middlewarem:[contentTypeOptions],
-    
+    middleware:[contentTypeOptions],
   }
 })}
