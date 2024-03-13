@@ -6,7 +6,7 @@ export default ({ mode }) =>{
   const env = loadEnv(mode, process.cwd());
   // https://vitejs.dev/config/
  return defineConfig({
-  plugins: [react()],
+  plugins: [react()], 
   
   assetsInclude: ["**/*.js", "**/*.svg"],
   define: {
@@ -18,10 +18,13 @@ export default ({ mode }) =>{
     },
   },
   build: {
-    chunkSizeWarningLimit: 1600,
-    
+    chunkSizeWarningLimit: 1600,    
+    rollupOptions: {
+      external: ['react', 'react-is', 'react-router', 'react/jsx-runtime'],
+    },
   },
   server:{
     middleware:[contentTypeOptions],
+   
   }
 })}

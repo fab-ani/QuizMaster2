@@ -1,12 +1,11 @@
-import React, {createContext, useState,useEffect} from "react";
+import React from 'react'
 
-
-const TextContext = createContext();
+const TextContext = React.createContext();
 
 export const TextProvider = ({children})=>{
-    const [extractedText, setExtractedText] = useState('');
+    const [extractedText, setExtractedText] = React.useState('');
 
-    useEffect(()=>{
+    React.useEffect(()=>{
     },[extractedText])
 
     return(

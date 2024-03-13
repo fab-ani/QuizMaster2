@@ -1,5 +1,4 @@
 import { useContext, useState } from 'react'
-import {FaUpload} from 'react-icons/fa'
 import extractTextFromPdf from './extractTextPdf';
 import TextContext from './TextContext';
 
