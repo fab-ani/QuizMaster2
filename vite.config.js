@@ -24,6 +24,11 @@ export default ({ mode }) =>{
     rollupOptions: {
       external: ['react', 'react-is', 'react-router', 'react/jsx-runtime'],
     },
+    output: {
+      globals: {
+        'react/jsx-runtime': 'ReactJsxRuntime',
+      },
+    },
   },
   server:{
     middleware:[contentTypeOptions],
